@@ -38,7 +38,6 @@ DEBUG=myapp:* NODE_ENV=development npm run dev
 deberías ver que la aplicación inicia correctamente.
 
 ## Consejos generales
-Use environment variables to indicate that the process is running in _development_ or _production_ mode since it will be best for each case.
 Usá variables de entorno para indicar que el proceso debe ejecutarse en modo _development o _production_ ya que esto permitirá su mejor funcionamiento para cada caso.
 
 No es recomendable terminar la conexión TLS en Node.js, sería mejor usar un API gateway que termina TLS y simplemente utilizar HTTP para comunicarte con el API gateway.
