@@ -6,7 +6,6 @@ Un workshop para hacer APIs REST con Node.js.
 Vas a necesitar contar con Node.js instalado (se recomienda nvm), npm y un editor de texto.
 
 ## Herramientas utilizadas
-- Swagger
 - Express.js v4 (v2 y v3 están descontinuadas, no las uses!)
 - express-generator
 
@@ -15,10 +14,8 @@ Express se basa en una arquitectura enfocada a middlewares para atender peticion
 
 Las rutas o lo que se conocen cómo _paths_ se puede representar cómo un middleware que se aplica en base a una regla. Esa regla puede ser simplemente una cadena de caracteres, una cadena de caracteres con parámetros o una expresión regular.
 
-En cuánto a arquitectura de archivos, vé de la siguiente forma:
-```
-```
-dónde `app.js` se encargaría únicamente de la configuración de la aplicación de Express.js en sí, cómo de agregar middlewares generales, rutas, la configuración necesaría para autorización/autenticación y el template engine. El directorio "routes" es dónde agregaremos los archivos con las rutas de nuestra aplicación.
+
+En `app.js` se encargaría únicamente de la configuración de la aplicación de Express.js en sí, cómo de agregar middlewares generales, rutas, la configuración necesaría para autorización/autenticación y el template engine. El directorio "routes" es dónde agregaremos los archivos con las rutas de nuestra aplicación.
 
 ## Arrancando
 Primero deberías clonar este repo:
