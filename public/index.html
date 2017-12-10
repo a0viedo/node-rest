@@ -111,13 +111,13 @@
             let html = '';
             result.forEach((elem) => {
               // insert HTML element
-                html += template.slice().replace('${title}', elem.title).replace('${img}', elem.thumbnail.path + imgVariant + '.' + elem.thumbnail.extension);
+                html += template.slice().replace('${name}', elem.name).replace('${img}', elem.thumbnail.path + imgVariant + '.' + elem.thumbnail.extension);
             });
             $('#itemsContainer').html(html);
           });
         }
 
-        var template = '<div class="col-md-3 col-sm-6"><div class="single-shop-product"><div class="product-upper"><img src="${img}" alt=""></div><h2><a href="">${title}</a></h2><div class="product-option-shop"><a class="add_to_cart_button" >More info</a></div></div></div>';
+        var template = '<div class="col-md-3 col-sm-6"><div class="single-shop-product"><div class="product-upper"><img src="${img}" alt=""></div><h2><a href="">${name}</a></h2><div class="product-option-shop"><a class="add_to_cart_button" >More info</a></div></div></div>';
         var imgVariant = '/portrait_fantastic';
     </script>
 </body></html>
