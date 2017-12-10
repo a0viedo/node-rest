@@ -15,7 +15,7 @@ Express se basa en una arquitectura enfocada a middlewares para atender peticion
 Las rutas o lo que se conocen cómo _paths_ se puede representar cómo un middleware que se aplica en base a una regla. Esa regla puede ser simplemente una cadena de caracteres, una cadena de caracteres con parámetros o una expresión regular.
 
 
-En `app.js` se encargaría únicamente de la configuración de la aplicación de Express.js en sí, cómo de agregar middlewares generales, rutas, la configuración necesaría para autorización/autenticación y el template engine. El directorio "routes" es dónde agregaremos los archivos con las rutas de nuestra aplicación.
+En `app.js` se encargaría únicamente de la configuración de la aplicación de Express.js en sí, como de agregar middlewares generales, rutas, la configuración necesaria para autorización/autenticación y el template engine. El directorio "routes" es donde agregaremos los archivos con las rutas de nuestra aplicación.
 
 ## Arrancando
 Primero deberías clonar este repo:
@@ -42,4 +42,4 @@ Usá variables de entorno para indicar que el proceso debe ejecutarse en modo _d
 
 No es recomendable terminar la conexión TLS en Node.js, sería mejor usar un API gateway que termina TLS y simplemente utilizar HTTP para comunicarte con el API gateway.
 
-No dejar valores por defecto cómo puertos o información de conexión en el código y utilizar variables de entorno para estos casos. En el entorno de desarrollo se puede utilizar un archivo local y setear la variable `NODE_ENV=development` para que tome efecto.
+No dejar valores por defecto como puertos o información de conexión en el código y utilizar variables de entorno para estos casos. En el entorno de desarrollo se puede utilizar un archivo local y setear la variable `NODE_ENV=development` para que tome efecto.
